@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Babylonica&family=Lobster&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family : sans-serif;
+}
+body{
+    background: #012124;
+}
+main{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.heading{
+    text-align: center;
+    font-size: 80px;
+    padding: 10px 20px ;
+    color: #e6d604;
+    font-family: 'Lobster', sans-serif;
+}
+.followers{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 1000px;
+    max-width: 1200px;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    width: 100%;
+    padding-top: 14px;
+}
+.card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    height: 200px;
+    width: 200px;
+    border:  1px solid #17b9b9;;
+    border-radius: 10px;
+    background: transparent; 
+}
+.card:hover{
+    box-shadow:  0 0 10px 2px #42ffd04d;
+    transition: all 300ms;
+}
+.card img{
+    max-width: 80px;
+    border-radius: 50%;
+}
+.card h4{
+    font-size: 20px;
+    text-transform: capitalize;
+    color: #59c0c0;
+    font-family: 'Babylonica', sans-serif;
+}
+.btn{
+    background: #21d6be;
+    text-decoration: none;
+    border-radius: 5px;
+    color: #1d006d;
+    font-size: 12px;
+    padding: 4px 10px;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    font-weight: 900;
+    transition: all 300ms;
+}
+.btn:hover{
+    background: #1cdbb2;
+    box-shadow: 0 0 2px 2px #33ffff;
+    letter-spacing: 2px;
+}
+
+.section-title{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   color: #17b9b9;
+}
+.underline{
+    height: 3px;
+    width: 100px;
+    background: #a7ffff;
+    
+}
+.btn-container{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+.page-btn,.next-btn, .prev-btn{
+    outline: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    padding: 6px;
+    background: #59c0c0;
+    font-weight: 500;
+    color: #000;
+}
+.next-btn, .prev-btn{
+    background: #e6d604;
+}
+.active-btn{
+    background: #f31b80;
+    color: #fff;
+}
+@media (max-width:992px) {
+    .heading{
+        font-size: 30px;
+    }
+    .followers{
+        width: 100%;
+    }
+    .container{
+        flex-wrap: nowrap;
+        flex-direction: column;
+    }
+    .btn-container{
+        padding: 15px 30PX;
+    }
+    
+}
